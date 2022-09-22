@@ -13,4 +13,6 @@ model Product {
   price      Decimal
   bar_code   String   @unique
   created_at DateTime @default(now())
+
+  @@map("products")
 }
